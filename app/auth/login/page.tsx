@@ -18,11 +18,11 @@ export default function Login() {
       <form method='POST' action={"#"} className='mt-10'>
         <div className='flex flex-col justify-center items-center'>
           <div className="relative w-4/5">
-            <input type="email" id="email" className="block py-2.5 px-0 w-full text-sm text-softBlack bg-transparent border-0 border-b-2 border-accentColor/30 appearance-none dark:text-white dark:border-accentColor dark:focus:border-accentColor/500 focus:outline-none focus:ring-0 focus:border-accentColor/60 peer" placeholder=" " />
+            <input type="email" id="email" className="block py-2.5 px-0 w-full text-sm text-softBlack bg-transparent border-0 border-b-2 border-softBlack/60 appearance-none dark:text-white dark:border-accentColor dark:focus:border-accentColor/500 focus:outline-none focus:ring-0 focus:border-accentColor/60 peer" placeholder=" " />
             <label htmlFor="email" className="absolute text-sm text-softBlack/50 dark:text-softBlack/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accentColor/60 peer-focus:dark:text-accentColor/50 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Email</label>
           </div>
           <div className="relative w-4/5 mt-10">
-            <input type="password" id="password" className="block py-2.5 px-0 w-full text-sm text-softBlack bg-transparent border-0 border-b-2 border-accentColor/30 appearance-none dark:text-white dark:border-accentColor dark:focus:border-accentColor/500 focus:outline-none focus:ring-0 focus:border-accentColor/60 peer" placeholder=" " />
+            <input type="password" id="password" className="block py-2.5 px-0 w-full text-sm text-softBlack bg-transparent border-0 border-b-2 border-softBlack/60 appearance-none dark:text-white dark:border-accentColor dark:focus:border-accentColor/500 focus:outline-none focus:ring-0 focus:border-accentColor/60 peer" placeholder=" " />
             <label htmlFor="password" className="absolute text-sm text-softBlack/50 dark:text-softBlack/40 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accentColor/60 peer-focus:dark:text-accentColor/50 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Password</label>
             <div className='text-sm mt-2 text-gray-600 text-right' >
               <span>Forgot your <Link href={"auth/reset"}>Password?</Link> </span>
@@ -47,7 +47,7 @@ export default function Login() {
           </div>
         </section>
       </section>
-      <section className='absolute bottom-12 left-1/2 transform -translate-x-1/2 '>
+      <section className='my-12'>
         <p className='text-sm text-center'>You don't have an account yet?<Link href={"/auth/signup"} className='text-accentColor font-semibold' >Sign Up</Link></p>
       </section>
     </main>
