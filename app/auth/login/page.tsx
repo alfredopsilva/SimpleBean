@@ -21,7 +21,7 @@ export default function Login() {
             <input
               type="email"
               id="email"
-              className="block py-2.5 px-0 w-full text-sm text-softBlack bg-transparent border-0 border-b-2 border-softBlack/60 appearance-none dark:text-white dark:border-accentColor dark:focus:border-accentColor/500 focus:outline-none focus:ring-0 focus:border-accentColor/60 peer"
+              className="block py-2.5 px-0 w-full text-sm text-softBlack bg-transparent border-0 border-b-2 border-softBlack/30 appearance-none dark:text-white dark:border-accentColor dark:focus:border-accentColor/500 focus:outline-none focus:ring-0 focus:border-accentColor/60 peer"
               placeholder=" "
             />
             <label
@@ -52,7 +52,7 @@ export default function Login() {
           </div>
           <button
             type="submit"
-            className="w-4/5 bg-softBlack mt-12 text-offWhite px-6 py-3 rounded text-sm"
+            className="w-4/5 bg-accentColor/70 mt-12 text-offWhite px-6 py-3 rounded text-sm"
           >
             Login
           </button>
@@ -61,15 +61,27 @@ export default function Login() {
       <section className="text-center text-gray-600 text-base mt-20">
         <p className="text-sm">Or Continue With</p>
         <section className="flex justify-center items-center mt-10">
-          <div className="flex gap-8">
-            <Link href={"#"}>
+          <div className="flex gap-4 flex-col w-4/5">
+            <Link
+              href={"#"}
+              className="w-full flex items-center gap-4 justify-center px-6 py-2  border border-solid border-gray-300 rounded-md hover:bg-accentColor/10 hover:duration-150"
+            >
               <Icon src={FacebookIcon} alt={"Facebook Icon"} width={36} />
+              <p className="text-sm text-gray-600">Facebook</p>
             </Link>
-            <Link href={"#"}>
+            <Link
+              href={"#"}
+              className="w-full flex items-center gap-4 justify-center px-6 py-2  border border-solid border-gray-300 rounded-md hover:bg-accentColor/10 hover:duration-150"
+            >
               <Icon src={GoogleIcon} alt={"Google Icon"} width={36} />
+              <p className="text-sm text-gray-600">Google</p>
             </Link>
-            <Link href={"#"}>
+            <Link
+              href={"#"}
+              className="w-full flex items-center gap-4 justify-center px-6 py-2  border border-solid border-gray-300 rounded-md hover:bg-accentColor/10 hover:duration-150"
+            >
               <Icon src={AppleIcon} alt={"Apple Icon"} width={36} />
+              <p className="text-sm text-gray-600">Github</p>
             </Link>
           </div>
         </section>

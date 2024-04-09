@@ -4,7 +4,7 @@
 
 @layer components {
   .button-primary {
-    @apply w-full bg-softBlack text-offWhite px-6 py-3 rounded text-sm hover:bg-accentColor/80 duration-300;
+    @apply w-full bg-accentColor/70 text-offWhite px-6 py-3 rounded text-sm hover:bg-accentColor/80 duration-300;
   }
 
   .button-secondary {

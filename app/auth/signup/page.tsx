@@ -54,6 +54,7 @@ export default function SingUp() {
 "
           />
           <div className="flex gap-2 mt-6">
+            {" "}
             <Input
               type="password"
               name="password"
@@ -69,7 +70,7 @@ export default function SingUp() {
           </div>
           <div className="flex flex-col mt-20 gap-4 w-full">
             <button type="submit" className="button-primary">
-              Login
+              Register
             </button>
             <button type="reset" className="button-secondary">
               Reset
